@@ -23,7 +23,7 @@ function AccountOperations() {
     dispatch the function from accountSlice.js file. */
     dispatch(deposit(depositAmount, currency));
     setDepositAmount("");
-    setCurrency("");
+    setCurrency("USD");
   }
 
   function handleWithdrawal() {
