@@ -21,7 +21,8 @@ function AccountOperations() {
     if (!depositAmount) return;
     /*In case the currency is different than USD Redux will
     dispatch the function from accountSlice.js file. */
-    dispatch(deposit(depositAmount, currency));
+    //dispatch(deposit(depositAmount, currency));
+    dispatch(deposit(depositAmount));
     setDepositAmount("");
     setCurrency("USD");
   }
